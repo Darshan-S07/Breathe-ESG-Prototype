@@ -1,0 +1,80 @@
+# .gitignore
+*.git
+# Python
+*.csv
+**pycache**/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.log
+
+# Django
+
+staticfiles/
+media/
+
+# Virtual Environment
+
+venv/
+env/
+ENV/
+
+# Node
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Build
+
+build/
+
+# Environment Variables
+
+.env
+
+# VS Code
+
+.vscode/
+
+# Mac
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+
+# PyCharm
+
+.idea/
+
+# Coverage
+
+.coverage
+htmlcov/
+
+# Migrations Cache
+
+*.mo
+*.pot
+
+# Parcel / Vite cache
+
+.cache/
+dist/
+
+# Temporary files
+
+tmp/
+temp/
+
+# Render / deployment
+
+.render/
+
+# Misc
+
+*.swp
+*.swo
