@@ -6,7 +6,7 @@ import Dashboard from "./Dashboard";
 import FailedRecords from "./FailedRecords";
 
 function App() {
-
+  API="https://breathe-esg-prototype-8t0u.onrender.com"
   const [records, setRecords] = useState([]);
 
   const [failedRecords, setFailedRecords] = useState([]);
@@ -16,7 +16,7 @@ function App() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/records/"
+        `${API}/api/records/`
       );
 
       setRecords(response.data);
@@ -32,7 +32,7 @@ function App() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/api/failed-records/"
+        `${API}/api/failed-records/`
       );
 
       setFailedRecords(response.data);

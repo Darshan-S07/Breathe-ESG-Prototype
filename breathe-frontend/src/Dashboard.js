@@ -1,13 +1,13 @@
 import axios from "axios";
 
 function Dashboard({ records, refreshRecords }) {
-
+  API="https://breathe-esg-prototype-8t0u.onrender.com"
   const approveRecord = async (id) => {
 
     try {
 
       await axios.patch(
-        `http://127.0.0.1:8000/api/approve/${id}/`,
+        `${API}/api/approve/${id}/`,
         {
           status: "APPROVED"
         }

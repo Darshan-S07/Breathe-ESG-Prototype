@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function Upload({ refreshRecords }) {
-
+  API="https://breathe-esg-prototype-8t0u.onrender.com"
   const [file, setFile] = useState(null);
 
   const handleUpload = async () => {
@@ -21,7 +21,7 @@ function Upload({ refreshRecords }) {
     try {
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/upload/",
+        `${API}/api/upload/`,
         formData
       );
 
