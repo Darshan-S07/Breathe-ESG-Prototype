@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+pip install -r requirements.txt
+
 cd breathe_backend
 
-pip install -r requirements.txt
 
 python manage.py collectstatic --noinput
 
