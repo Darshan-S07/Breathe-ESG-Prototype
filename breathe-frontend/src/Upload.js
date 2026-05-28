@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function Upload({ refreshRecords }) {
-  API="https://breathe-esg-prototype-8t0u.onrender.com"
+  const API="https://breathe-esg-prototype-8t0u.onrender.com"
   const [file, setFile] = useState(null);
 
   const handleUpload = async () => {

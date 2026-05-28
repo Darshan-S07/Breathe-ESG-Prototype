@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function Dashboard({ records, refreshRecords }) {
-  API="https://breathe-esg-prototype-8t0u.onrender.com"
+  const API="https://breathe-esg-prototype-8t0u.onrender.com"
   const approveRecord = async (id) => {
 
     try {

@@ -6,7 +6,7 @@ import Dashboard from "./Dashboard";
 import FailedRecords from "./FailedRecords";
 
 function App() {
-  API="https://breathe-esg-prototype-8t0u.onrender.com"
+  const API="https://breathe-esg-prototype-8t0u.onrender.com"
   const [records, setRecords] = useState([]);
 
   const [failedRecords, setFailedRecords] = useState([]);
